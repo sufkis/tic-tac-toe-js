@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.game-wrapper {
+  width: 1000px; height: 1000px;
+}
+
+.row {
+  height: 33%;
+}
+
+.mid-row {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.mid-col {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
