@@ -11,14 +11,21 @@ const handleOnSquareClick = (id) => {
     square.textContent = isXTurn ? 'X' : 'O';
     const didWin = checkForWin();
     if (didWin) {
-      swal(`${isXTurn ? 'X' : 'O'} WON this round!`);
+      swal({
+        title: isXTurn ? 'X' : 'O',
+        text: "won this round!",
+        button: "Play again!",
+      });
       return resetGame();
     }
     isXTurn = !isXTurn;
     moveCount++;
   }
   if (moveCount === 9) {
-    swal("It's a DRAW!");
+    swal({
+      title: "It's a DRAW!",
+      button: "Play again!",
+    });
     resetGame();
   }
 };

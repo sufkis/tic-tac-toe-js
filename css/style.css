@@ -2,15 +2,37 @@
   box-sizing: border-box;
 }
 
+html {
+  background: radial-gradient(circle, rgba(146,144,195,1) 0%, rgba(83,92,145,1) 28%, rgba(7,15,43,1) 100%); 
+}
+
+  body {
+  background-color: transparent;
+}
+
+h1 {
+  color: #9290C3;
+  font-size: 64px;
+}
+
 .page-wrapper {
+  height: 90vh;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   row-gap: 30px;
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
 }
 
 .game-wrapper {
-  width: 1000px; height: 1000px;
+  width: 530px; height: 530px;
+  padding: 30px;
+  border: 5px solid #9290C3;
+  border-radius: 25px;
+  background: radial-gradient(circle, rgba(7,15,43,1) 0%, rgba(27,26,85,1) 95%, rgba(146,144,195,1) 100%);
+  box-shadow: 0px 0px 10px 5px #9290C3, inset 0px 0px 5px 3px #9290C3;
 }
 
 .row {
@@ -18,19 +40,64 @@
 }
 
 .mid-row {
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 5px solid #535C91;
+  border-bottom: 5px solid #535C91;
 }
 
 .col {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 75px;
   font-weight: 700;
+  color: #9290C3;
+}
+
+.col:hover {
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px 5px #535c915b;
 }
 
 .mid-col {
-  border-left: 5px solid black;
-  border-right: 5px solid black;
+  border-left: 5px solid #535C91;
+  border-right: 5px solid #535C91;
+}
+
+.swal-modal {
+  /* height: 200px; */
+  font-family: "Protest Revolution", sans-serif;
+  background: radial-gradient(circle, rgba(7,15,43,1) 0%, rgba(27,26,85,1) 100%);
+  box-shadow: 0px 0px 20px 10px black;
+}
+
+.swal-title {
+  color: #9290C3;
+  font-size: 36px;
+}
+
+.swal-text {
+  color: #9290C3;
+  font-size: 30px;
+}
+
+.swal-button {
+  font-size: 20px;
+  color: #070F2B;
+  background-color: #535C91;
+  margin-bottom: 6px;
+}
+
+.swal-button:hover {
+  color: #535C91;
+  background-color: #070F2B !important;
+}
+
+.icon-button {
+  height: 50px; width: 50px;
+  align-self: center;
+  color: #9290C3;
+}
+
+.icon-button:hover {
+  cursor: pointer;
 }
