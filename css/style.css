@@ -64,7 +64,6 @@ h1 {
 }
 
 .swal-modal {
-  /* height: 200px; */
   font-family: "Protest Revolution", sans-serif;
   background: radial-gradient(circle, rgba(7,15,43,1) 0%, rgba(27,26,85,1) 100%);
   box-shadow: 0px 0px 20px 10px black;
@@ -93,11 +92,22 @@ h1 {
 }
 
 .icon-button {
-  height: 50px; width: 50px;
+  height: 80px; width: 80px;
+  padding: 12px;
   align-self: center;
   color: #9290C3;
+  border: 2px solid #9290C3;
+  background-color: #070F2B;
+  border-radius: 10px;
+  opacity: 0.3;
 }
 
 .icon-button:hover {
   cursor: pointer;
+  box-shadow: 0px 0px 1px 5px #9290c342;
+}
+
+.icon-button-active {
+  background-color: #1B1A55;
+  opacity: 1;
 }
